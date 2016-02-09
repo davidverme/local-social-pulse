@@ -1,5 +1,8 @@
-<div ng-repeat="item in news track by $index">
-    <p>
-        {{item}}
-    </p>
+<div class="news-board row">
+    <div class="news-item col-sm-6 col-md-4 col-lg-3" ng-repeat="item in news track by $index">
+        <img src="{{item.imageUrl}}">
+        <p>
+            {{item.text}}
+        </p>
+    </div>
 </div>

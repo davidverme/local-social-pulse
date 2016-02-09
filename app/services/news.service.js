@@ -9,15 +9,18 @@ angular.module('local-social-pulse').service('newsService', function($q, $filter
     var listOfNews = [{
       date: new Date('2016/02/01 12:01:00'),
       author: 'Jorge Ramirez',
-      text: 'Hola que tal'
+      text: 'Hola que tal',
+      imageUrl: 'https://i.ytimg.com/vi/A_aPgPq6hMM/maxresdefault.jpg'
     }, {
       date: new Date('2016/02/01 12:02:00'),
       author: 'Juan Sanchez',
-      text: 'Todo bien'
+      text: 'Todo bien',
+      imageUrl: 'http://cosmouk.cdnds.net/15/16/1429012887-monalisaducklips.png'
     }, {
       date: new Date('2016/01/29 12:02:00'),
       author: 'Gerardo Pilar',
-      text: 'Siempre Tarde'
+      text: 'Siempre Tarde',
+      imageUrl: 'http://www.kineo.com/m/0/woody-selfie.jpg'
     }];
 
     if (filters) {
