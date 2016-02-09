@@ -1,0 +1,34 @@
+/** Bootstrap override **/
+
+/** End Bootstrap override **/
+body {
+    background-color: #434857;
+    color: #b7bcc8;
+}
+
+.navbar-brand img {
+    height: 24px;
+}
+
+.search-input {
+    position: relative;
+}
+.search-input input {
+    margin: 10px 30px;
+    background-color: #434857;
+    color: #ffffff;
+    border: 1px solid #434857;
+}
+
+.search-input button {
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    padding: 9px 10px;
+    color: #b7bcc8;
+    border: 0;
+    line-height: 0;
+    background-color: transparent;
+}
+
+   
