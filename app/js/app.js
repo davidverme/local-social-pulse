@@ -8,7 +8,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/news-board', {
         controller: 'localNewsController',
-        templateUrl: '../controllers/news-board/news-board.tmpl.html'
+        templateUrl: 'controllers/news-board/news-board.tmpl.html'
       })
       .otherwise({redirectTo: '/news-board'});
 }]);
