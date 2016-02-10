@@ -31,12 +31,26 @@ body {
     background-color: transparent;
 }
 
+.news-item-template {
+    display: none;
+}
+
 .news-board {
-    margin-top: 55px;
+    margin: 55px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .news-board .news-item{
     padding: 0;
+    position: relative;
+    float: none;
+    flex-grow: 1;
+}
+@media (min-width: 768px) {
+    .news-board .news-item{
+        border-left: #b7bcc8 solid 3px;
+    }
 }
 
 .news-board .news-item img {
@@ -44,11 +58,8 @@ body {
 }
 
 .news-board .news-item p {
-    position: absolute;
-    bottom: 0;
     color: white;
     text-shadow: 1px 1px #0f0f0f;
     padding: 5px;
     margin: 0;
 }
-   

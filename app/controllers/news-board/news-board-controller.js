@@ -4,6 +4,6 @@
 angular.module('local-social-pulse').controller('localNewsController',
   function($rootScope, $scope) {
     $rootScope.$on('news-refresh', function(event, data) {
-    $scope.news = data;
-  });
+      $scope.news = data;
+    });
 });
