@@ -52,8 +52,34 @@ body {
         border-left: #b7bcc8 solid 3px;
     }
 }
+.news-board .news-item .news-item-header {
+    position: absolute;
+    width: 100%;
+    padding: 0 4px;
+}
 
-.news-board .news-item img {
+.news-board .news-item .user-image {
+    width: 10%;
+    box-shadow: 2px 2px 2px #434857;
+    float: left;
+    margin: 4px;
+}
+
+.news-board .news-item .user-name {
+    vertical-align: top;
+    color: white;
+    text-shadow: 1px 1px #0f0f0f;
+}
+
+.news-board .news-item .news-item-date {
+    vertical-align: top;
+    color: white;
+    text-shadow: 1px 1px #0f0f0f;
+    font-size: 0.8em;
+    display: block;
+}
+
+.news-board .news-item .preview {
     width: 100%;
 }
 
