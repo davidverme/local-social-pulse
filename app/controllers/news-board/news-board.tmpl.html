@@ -9,5 +9,14 @@
         <p>
             {{::item.text}}
         </p>
+        <div class="stats">
+            <span class="stat-icon pull-left glyphicon glyphicon-stats"></span>
+            <span class="stat-icon glyphicon glyphicon glyphicon-thumbs-up"></span>
+            <span class="stat-number">{{::item.likes.toLocaleString()}}</span>
+            <span class="stat-icon glyphicon glyphicon glyphicon-comment"></span>
+            <span class="stat-number">{{::item.comments.toLocaleString()}}</span>
+            <span class="stat-icon glyphicon glyphicon-share-alt"></span>
+            <span class="stat-number">{{::item.shares.toLocaleString()}}</span>
+        </div>
     </div>
 </div>
