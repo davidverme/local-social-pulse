@@ -18,6 +18,7 @@ body {
     background-color: #434857;
     color: #ffffff;
     border: 1px solid #434857;
+    outline-color: #7b7e89;
 }
 
 .search-input button {
@@ -29,6 +30,7 @@ body {
     border: 0;
     line-height: 0;
     background-color: transparent;
+    outline: none;
 }
 
 .news-item-template {

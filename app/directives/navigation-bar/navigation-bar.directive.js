@@ -17,6 +17,10 @@ angular.module('local-social-pulse').directive('navigationBar', function() {
         });
       };
 
+      $scope.cleanSearch = function () {
+        $scope.searchText = "";
+      };
+
       angular.element(document).ready(function() {
         $timeout(function(){
           newsService.getLocalNews().then(function(data) {
