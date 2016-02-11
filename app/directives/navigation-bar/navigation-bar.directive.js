@@ -11,14 +11,21 @@ angular.module('local-social-pulse').directive('navigationBar', function() {
         $rootScope.$emit('news-refresh', data);
       }
 
-      $scope.search = function () {
+      function search () {
         newsService.getLocalNews({text: $scope.searchText}).then(function(data) {
           setNews(data);
         });
-      };
+      }
+
+      $scope.search = search;
 
       $scope.cleanSearch = function () {
         $scope.searchText = "";
+        search();
+      };
+
+      $scope.blurSearch = function () {
+        angular.element("#searchInput").blur();
       };
 
       angular.element(document).ready(function() {

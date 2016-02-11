@@ -33,6 +33,10 @@ body {
     outline: none;
 }
 
+.transparent {
+    opacity: 0;
+}
+
 .news-item-template {
     display: none;
 }
