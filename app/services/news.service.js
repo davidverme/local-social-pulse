@@ -50,7 +50,7 @@ angular.module('local-social-pulse').service('newsService', function($q, $filter
     }
 
     var newArray = [];
-    for (var i=0; i<100; i++) {
+    for (var i=0; i<10; i++) {
       for (var j=0; j<listOfNews.length; j++){
         var newItem = angular.copy(listOfNews[j]);
         newItem.id = i + '-' + j;
